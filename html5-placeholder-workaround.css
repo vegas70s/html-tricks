@@ -1,3 +1,5 @@
+/* Source: http://davidwalsh.name/html5-placeholder-css */
+
 /* all */
 ::-webkit-input-placeholder { color:#f00; }
 ::-moz-placeholder { color:#f00; } /* firefox 19+ */
