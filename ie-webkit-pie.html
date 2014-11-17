@@ -13,12 +13,15 @@ dirty, old, and useless clown, like IE!
 
 -->
 <style type="text/css">
-div { font-weight: bold;}
-.roundy {
+div { 
     margin: 50px auto;
-    width: 100px;
-    xheight: 200px;
-    padding: 30px;
+    max-width: 160px;
+    padding: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.roundy {
+
     border: 2px solid black;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -40,9 +43,18 @@ div { font-weight: bold;}
         -pie-background: linear-gradient(transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5)) 0 0 / 50px 50px,
         linear-gradient(90deg, transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5)) 0 0 / 50px 50px white;
 }
+.shadowy {
+    -webkit-box-shadow: #888 .2em .2em .5em;
+    -moz-box-shadow: #888 .2em .2em .5em;
+    box-shadow: #888 .2em .2em .5em;
+}
 </style>
 </head>
 <body>
-        <div class="roundy gradienty">Round, even in older, uselesser versions of IE!</div>
+    <div class="roundy gradienty shadowy">
+    PIE provides border-radius, gradient, and box-shadow, 
+    with h**kers and blackjack;
+    even in dirtier, older, uselesser versions of IE!
+    </div>
 </body>
 </html>
