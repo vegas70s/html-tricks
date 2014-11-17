@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+ie-webkit-pie.html
+---------------------
+
+Requires download of PIE from
+http://css3pie.com
+
+PIE provides Gradient, Shadow, and Radius for
+dirty, old, and useless clown, like IE!
+
+-->
+<style type="text/css">
+div { font-weight: bold;}
+.roundy {
+    margin: 50px auto;
+    width: 100px;
+    xheight: 200px;
+    padding: 30px;
+    border: 2px solid black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    behavior: url(css/PIE-1.0.0/PIE.htc);
+}
+.gradienty {
+    background-size: 50px 50px;
+    background-color: white;
+    background-image: 
+        -webkit-linear-gradient(transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5)),
+        -webkit-linear-gradient(0deg, transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5));
+    background-image: 
+        -moz-linear-gradient(transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5)),
+        -moz-linear-gradient(0deg, transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5));
+    background-image: 
+        linear-gradient(transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5)),
+        linear-gradient(90deg, transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5));
+        -pie-background: linear-gradient(transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5)) 0 0 / 50px 50px,
+        linear-gradient(90deg, transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5)) 0 0 / 50px 50px white;
+}
+</style>
+</head>
+<body>
+        <div class="roundy gradienty">Round, even in older, uselesser versions of IE!</div>
+</body>
+</html>
